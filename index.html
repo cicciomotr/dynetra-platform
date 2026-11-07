@@ -83,13 +83,6 @@ window.addEventListener('resize',()=>{drawAll();if(!rows.length)return;const id=
 
 .kb-toolbar{display:grid;grid-template-columns:1fr 220px;gap:10px;margin:14px 0}.kb-input,.kb-select{border:1px solid #34485d;background:#050a11;color:#eef4fb;border-radius:11px;padding:12px;font:inherit}.kb-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.kb-card{border:1px solid var(--line);background:linear-gradient(180deg,#0b131d,#05090f);border-radius:15px;padding:15px}.kb-card h3{margin:0 0 6px;font-size:16px}.kb-domain{font-size:10px;letter-spacing:1.4px;text-transform:uppercase;color:var(--red2);font-weight:950}.kb-tags{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}.kb-tag{font-size:10px;border:1px solid #33485e;background:#0a1420;border-radius:999px;padding:4px 8px;color:#c9d5e2}.kb-detail{display:grid;gap:8px;margin-top:10px}.kb-detail div{border-left:3px solid var(--red);padding-left:10px;font-size:12px;line-height:1.45;color:#d9e2ec}.kb-evidence{background:rgba(53,245,255,.05);border:1px solid rgba(53,245,255,.2);padding:10px;border-radius:10px;font-size:12px;color:#dffcff}.kb-empty{padding:28px;text-align:center;color:var(--muted);border:1px dashed #41566d;border-radius:13px}.knowledge-strip{border:1px solid rgba(53,245,255,.25);background:linear-gradient(90deg,rgba(53,245,255,.07),rgba(225,6,0,.05));border-radius:13px;padding:12px;margin-top:12px;font-size:12px;line-height:1.5}.knowledge-strip b{color:var(--cyan)}@media(max-width:900px){.kb-grid,.kb-toolbar{grid-template-columns:1fr}}
 </style></head><body><h1>Dynetra V4 Engineering + Driver Physiology Report</h1><pre>${content}</pre>
-<script>
-if ("serviceWorker" in navigator) {
-  window.addEventListener("load", () => {
-    navigator.serviceWorker.register("./sw.js").catch(console.error);
-  });
-}
-</script>
 </body></html>`;let a=document.createElement('a');a.href=URL.createObjectURL(new Blob([doc],{type:'text/html'}));a.download='dynetra_v4_engineering_report.html';a.click()}
 
 
